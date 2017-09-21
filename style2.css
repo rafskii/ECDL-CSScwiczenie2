@@ -1,0 +1,56 @@
+
+/* pseudoklasy oznaczamy dwukropkiem */
+
+p:first-line {
+		color: red;
+	} 
+
+p:first-letter {
+		color: #ffff00;
+		font-size: 300%;
+		float: left;
+	}
+
+q:before {
+		content: "Cytat:";
+		color: red;
+		} 
+
+b:before { /* przed ka¿dym pogrubieniem wstawi nam obrazek */
+		content: url(ikona_wazne.png);
+		}
+
+p.news:before {
+		content: url(ikona_news.jpg);
+		}
+
+i:before {							/* Polskie nawiasny cytuj±ce to : \201E i \201D z tabeli znaków kodowych */
+		content: open-quote;
+		}
+
+i:after {
+		content: close-quote;
+		}
+
+a:link {  /* pseudoklasa dla linków a */
+		color: #ff80c0;
+		}
+
+a:visited {
+		color: #00ff00;
+		}
+
+a:hover {                /* najechanie na obiekt spowoduje reakcjê */
+		color: #ff0000;
+		} 
+
+a:active {
+		color: #000080;
+		}
+
+textarea:focus {
+		color: white;
+		background-color: black;
+}
+
+
